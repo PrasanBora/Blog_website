@@ -1,0 +1,18 @@
+
+<%- include('partials/header.ejs'); -%>
+
+<h1> Compose </h1>
+
+<form action="/compose" method="post">
+    <h5> <b>Title</b></h5>
+    <input  size="158" type="text" name="titleText"></input>
+    <h5> <b>Post</b></h5>
+    <textarea rows="6" cols="160" name="postText"></textarea>
+    <!-- <input type="text" name="inputText"></input> -->
+    <br>
+    <button type="submit" name="submitButton" style="background-color:rgb(46, 104, 204) ;
+    border: none;border-radius: 5px; color: white; padding: 0.5%;">Publish</button>
+
+</form>
+
+<%- include('partials/footer.ejs'); -%>
